@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+form input[type="color"] {
+    margin-right: 10px;
+}
+
+.contenedor-elementos {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos salten a nuevas filas */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center; /* Centrar las filas horizontalmente */
+}
+
+.elemento {
+    display: flex;
+    flex-direction: column; /* Botones debajo de la imagen */
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.elemento img {
+    width: 100px; /* Establece el ancho de la imagen */
+    height: 100px; /* Establece la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen se recorte y cubra todo el área del contenedor */
+    background-color: #ccc; /* Fondo gris por defecto */
+    border-radius: 4px;
+}
+
+
+.botones {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Espaciado entre los botones */
+}
+
+.botones button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botones .cambiar {
+    background-color: #007bff;
+    color: white;
+}
+
+.botones .cambiar:hover {
+    background-color: #0056b3;
+}
+
+.botones .borrar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.botones .borrar:hover {
+    background-color: #a71d2a;
+}
